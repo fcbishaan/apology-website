@@ -224,19 +224,19 @@ function App() {
 
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { src: '/video calls.jpg', title: 'Daily Stories', caption: 'You loved to share everything you did the whole day — I miss those talks.' },
-              { src: '/pic with efforts.jpg', title: 'Your Effort', caption: 'You put in so much effort to click this picture for me.' },
-              { src: '/simplicity.jpg', title: 'Simple & Beautiful', caption: 'In the blue dress, your simplicity took my heart.' },
-              { src: '/without filter.jpg', title: 'Natural You', caption: 'Without filters — just you, perfectly you.' },
-              { src: '/hottness.jpg', title: 'Your Radiance', caption: 'Your glow, your charm — forever in my memories.' },
-              { src: '/test image .jpg', title: 'Precious Moment', caption: 'A moment I keep close to my heart.' },
+              { src: 'video calls.jpg', title: 'Daily Stories', caption: 'You loved to share everything you did the whole day — I miss those talks.' },
+              { src: 'pic with efforts.jpg', title: 'Your Effort', caption: 'You put in so much effort to click this picture for me.' },
+              { src: 'simplicity.jpg', title: 'Simple & Beautiful', caption: 'In the blue dress, your simplicity took my heart.' },
+              { src: 'without filter.jpg', title: 'Natural You', caption: 'Without filters — just you, perfectly you.' },
+              { src: 'hottness.jpg', title: 'Your Radiance', caption: 'Your glow, your charm — forever in my memories.' },
+              { src: 'test image .jpg', title: 'Precious Moment', caption: 'A moment I keep close to my heart.' },
             ].map((item, i) => (
               <div
                 key={i}
                 className="group relative overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-pink-200/50 hover:shadow-2xl transition-all duration-500"
               >
                 <img 
-                  src={item.src} 
+                  src={item.src}
                   alt={item.title}
                   className="aspect-square w-full object-cover group-hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
